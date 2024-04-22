@@ -3,7 +3,7 @@ const app = express();
 
 
 app.get("/health", (req, res) => {
-    res.send("Health good")
+    res.json("Health good")
 })
 
 app.listen(3000, () => {
