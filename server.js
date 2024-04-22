@@ -3,7 +3,10 @@ const app = express();
 
 
 app.get("/health", (req, res) => {
-    res.json("Health good")
+    res.json({
+        status: 200,
+        message: "health good"
+    })
 })
 
 app.listen(3000, () => {
